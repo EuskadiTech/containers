@@ -7,11 +7,9 @@ name: Build OBS Webtop
 
 on:
   push:
-    branches: [ "main" ]
-    # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
+    paths: [ "obs_webtop/**" ]
   pull_request:
-    branches: [ "main" ]
+    paths: [ "obs_webtop/**" ]
 
 env:
   # Use docker.io for Docker Hub if empty
